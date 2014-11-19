@@ -1,0 +1,67 @@
+#nav li:hover ul{
+	display:block;
+}
+
+#nav{
+	display:block;
+	position:relative;
+	background: -webkit-linear-gradient(gray, white); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(gray, white); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(gray, white); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(gray, white); /* Standard syntax */
+  	border: 1px solid black;
+  	font: bold 14px Verdana;
+  	height: 40px;
+  	width: 1000px;
+  	margin: 0px auto;
+}
+
+#nav ul{
+	margin:0px;
+	padding:0px;
+}
+
+#nav li{
+	position:relative;
+	float:left;
+	list-style-type:none;
+}
+
+#nav li a{
+	text-decoration: none;
+	display:block;
+	color:black;
+	border: 1px solid black;
+	padding: 10px 25px;
+}
+
+#nav li a:hover{
+	background: white;
+}
+
+#nav ul:after{
+	content:".";
+	display:block;
+	height:0px;
+	clear:both;
+	visibility:hidden;
+}
+
+#nav ul ul{
+	position:absolute;
+	display:none;
+	left:0px;
+	background: -webkit-linear-gradient(gray, white); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(gray, white); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(gray, white); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(gray, white); /* Standard syntax */
+}
+
+#nav ul ul li{
+	border: 1px solid black;
+	width: 100%;
+}
+
+#nav ul ul li a{
+	border-right: none;
+}

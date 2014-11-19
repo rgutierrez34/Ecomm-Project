@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>the Sole Shoe Shop</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div id="banner">
+
+	<%= image_tag("logo.png") %>
+	<%= image_tag("banner.png") %>
+</div>
+
+<div id ="nav">
+	<ul>
+		<li><%= link_to 'MEN', 'men' %>
+			<ul>
+				<li><a href="#">Casual</a></li>
+				<li><a href="#">Formal</a></li>
+				<li><a href="#">Sports/Athletic</a></li>
+				<li><a href="#">Boots</a></li>
+			</ul>
+		</li>
+		<li><%= link_to 'WOMEN', 'women' %>
+			<ul>
+				<li><a href="#">Casual</a></li>
+				<li><a href="#">Formal</a></li>
+				<li><a href="#">Sports/Athletic</a></li>
+				<li><a href="#">Boots</a></li>
+			</ul>
+		</li>
+		<li><%= link_to 'KIDS', 'kids' %>
+		<li><a href="#">SALE</a></li>
+		<li><a href="#">FEATURED</a></li>
+	</ul>
+</div>
+
+<%= yield %>
+
+</body>
+</html>
