@@ -21,7 +21,7 @@
   </div>
   <div class="field">
     <%= f.label :category %><br>
-    <%= f.collection_select :category_id, @categories, :id, :category %>
+    <%= f.collection_select :category_id, @categories, :id, :name %>
   </div>
   <div class="field">
     <%= f.label :quantity %><br>
@@ -38,6 +38,10 @@
   <div class="field">
     <%= f.label :image %><br>
     <%= f.text_field :image %>
+  </div>
+  <div class="field">
+    <%= f.label :sale %><br>
+    <%= f.text_field :sale %>
   </div>
   <div class="field">
     <%= f.label :notes %><br>

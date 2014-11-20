@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141118223732) do
+ActiveRecord::Schema.define(version: 20141120045510) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -47,7 +47,7 @@ ActiveRecord::Schema.define(version: 20141118223732) do
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
 
   create_table "categories", force: true do |t|
-    t.string   "category"
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -62,7 +62,10 @@ ActiveRecord::Schema.define(version: 20141118223732) do
     t.string   "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "sale"
     t.integer  "category_id"
   end
+
+  add_index "products", ["category_id"], name: "index_products_on_category_id"
 
 end

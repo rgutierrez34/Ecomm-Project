@@ -8,10 +8,10 @@ class CategoryController < ApplicationController
   end
 
   def women
-  	@products = Product.where(category: 2)
+  	@products = Product.where(category: 3)
   end
 
   def kids
-  	@products = Product.where(category: 3)
+  	@products = Product.where(category: 4)
   end
 end

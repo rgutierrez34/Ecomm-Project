@@ -13,6 +13,7 @@ Rails.application.routes.draw do
     get 'men' => 'category#men'
     get 'women' => 'category#women'
     get 'kids' => 'category#kids'
+    get 'sale' => 'filter#sale'
    
 
   # Example of regular route:
