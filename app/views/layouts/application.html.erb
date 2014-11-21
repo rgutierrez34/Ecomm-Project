@@ -10,13 +10,13 @@
 
 <div id="banner">
 
-	<%= image_tag("logo.png") %>
+	<%= link_to image_tag("logo.png"), root_path %>
 	<%= image_tag("banner.png") %>
 </div>
 
 <div id ="nav">
 	<ul>
-		<li><%= link_to 'MEN', 'men' %>
+		<li><%= link_to 'MEN', men_path %>
 			<ul>
 				<li><a href="#">Casual</a></li>
 				<li><a href="#">Formal</a></li>
@@ -24,7 +24,7 @@
 				<li><a href="#">Boots</a></li>
 			</ul>
 		</li>
-		<li><%= link_to 'WOMEN', 'women' %>
+		<li><%= link_to 'WOMEN', women_path %>
 			<ul>
 				<li><a href="#">Casual</a></li>
 				<li><a href="#">Formal</a></li>
@@ -32,14 +32,16 @@
 				<li><a href="#">Boots</a></li>
 			</ul>
 		</li>
-		<li><%= link_to 'KIDS', 'kids' %>
-		<li><%= link_to 'SALE', 'sale' %>
-		<li><%= link_to 'NEW', 'new' %>
+		<li><%= link_to 'KIDS', kids_path %>
+		<li><%= link_to 'SALE', sale_path %>
+		<li><%= link_to 'NEW', new_path %>
 		<li><a href="#">FEATURED</a></li>
 	</ul>
 </div>
 
-<%= yield %>
+<div id="content">
+	<%= yield %>
+</div>
 
 </body>
 </html>
