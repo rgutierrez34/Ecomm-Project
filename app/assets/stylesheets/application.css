@@ -19,10 +19,16 @@
 .product img{
 	height: 150px;
 	width: 150px;
+	margin-left: 20px;
 }
 
 .product h2{
-	font-size: 12px;
+	font-size: 14px;
+	text-align: center;
+}
+
+.product h2 a{
+	color: #A8A0A3;
 }
 
 #nav li:hover ul{

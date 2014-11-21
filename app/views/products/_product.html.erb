@@ -1,11 +1,9 @@
 <div class="product">
 
-  <h2><%= link_to product.name, product %></h2>
-  <span><%= image_tag product.image %></span>
   
-  <p> 
-    <b>Name: </b><%= product.name %>
-  </p>
+  <span><%= link_to image_tag(product.image), product %></span>
+  
+  <h2><%= link_to product.name, product %></h2>
 
   <p> 
     <b>Price: </b><%= product.price %>
