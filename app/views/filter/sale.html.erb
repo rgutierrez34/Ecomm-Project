@@ -1,4 +1,7 @@
 <h1>Products on Sale</h1>
+
+<%= paginate @products %>
+
 <% @products.each do |product| %>
   <%= render product %>
 <% end %>
