@@ -6,7 +6,7 @@
   <h2><%= link_to product.name, product %></h2>
 
   <p> 
-    <b>Price: </b><%= product.price %>
+    <b>Price: </b><%= number_to_currency(product.price) %>
   </p>
 
 </div>

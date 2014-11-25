@@ -43,3 +43,5 @@ gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
 
 gem 'kaminari'
+
+gem 'carrierwave'
