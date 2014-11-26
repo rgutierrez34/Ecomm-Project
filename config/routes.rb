@@ -17,7 +17,7 @@ Rails.application.routes.draw do
     get 'new' => 'filter#new'
     get 'contact' =>'contact_about#contact'
     get 'about' =>'contact_about#about'
-   
+    get 'search' => 'filter#search', as: 'search'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

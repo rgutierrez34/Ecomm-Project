@@ -1,0 +1,15 @@
+<h1>Search Results for <%= params[:search_keywords] %></h1>
+
+<% if @products.size.zero? %>
+	<p>0 matches.</p>
+<% else %>
+  <% if @products.size == 1 %>
+  	<p>1 match.</p>
+  <% else %>
+    <p><%= @products.size %> matches.</p>
+  <% end %>
+  <%= render partial: 'products/product', 
+		  collection: @products,
+		  locals: { display_link_to_show: true, 
+				  display_link_to_edit: false }%> 
+<% end %>
