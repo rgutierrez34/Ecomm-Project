@@ -14,7 +14,7 @@ ActiveAdmin.register Product do
   #   permitted
   # end
 
-  permit_params :name, :description, :quantity, :price, :size, :image, :notes, :category_id
+  permit_params :name, :description, :quantity, :price, :image, :category_id, :sale
 
   form :html => {:multipart => true} do |f|
     f.inputs "Product Details" do
@@ -24,8 +24,7 @@ ActiveAdmin.register Product do
     f.input :quantity
     f.input :category
     f.input :image
-    f.input :size
-    f.input :notes
+    f.input :sale
   end
 
 f.actions
