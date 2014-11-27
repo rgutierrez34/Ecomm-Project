@@ -1,0 +1,84 @@
+#banner
+  margin: 0px, auto
+  text-align: center
+
+#content
+  width: 1000px
+  margin: 0px auto
+
+.product
+  width: 200px
+  display: inline-block
+  vertical-align: top
+  padding-left: 40px
+  img
+    height: 150px
+    width: 150px
+    margin-left: 20px
+  h2
+    font-size: 14px
+    text-align: center
+    a
+      color: #A8A0A3
+
+#nav
+  li:hover ul
+    display: block
+  display: block
+  position: relative
+  background: -webkit-linear-gradient(gray, white)
+  /* For Safari 5.1 to 6.0
+  background: -o-linear-gradient(gray, white)
+  /* For Opera 11.1 to 12.0
+  background: -moz-linear-gradient(gray, white)
+  /* For Firefox 3.6 to 15
+  background: linear-gradient(gray, white)
+  /* Standard syntax
+  border: 1px solid black
+  font: bold 14px Verdana
+  height: 40px
+  width: 1000px
+  margin: 0px auto
+  ul
+    margin: 0px
+    padding: 0px
+  li
+    position: relative
+    float: left
+    list-style-type: none
+    a
+      text-decoration: none
+      display: block
+      color: black
+      border: 1px solid black
+      padding: 10px 25px
+      &:hover
+        background: white
+  ul
+    &:after
+      content: "."
+      display: block
+      height: 0px
+      clear: both
+      visibility: hidden
+    ul
+      position: absolute
+      display: none
+      left: 0px
+      background: -webkit-linear-gradient(gray, white)
+      /* For Safari 5.1 to 6.0
+      background: -o-linear-gradient(gray, white)
+      /* For Opera 11.1 to 12.0
+      background: -moz-linear-gradient(gray, white)
+      /* For Firefox 3.6 to 15
+      background: linear-gradient(gray, white)
+      /* Standard syntax
+      li
+        border: 1px solid black
+        width: 100%
+        a
+          border-right: none
+
+#search
+  margin-left: 950px
+  padding-bottom: 10px
