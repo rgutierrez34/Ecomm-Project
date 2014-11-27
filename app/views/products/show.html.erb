@@ -26,18 +26,8 @@
 </p>
 
 <p>
-  <strong>Size:</strong>
-  <%= @product.size %>
-</p>
-
-<p>
   <strong>Image:</strong>
   <%= image_tag @product.image_url.to_s %>
-</p>
-
-<p>
-  <strong>Notes:</strong>
-  <%= @product.notes %>
 </p>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
