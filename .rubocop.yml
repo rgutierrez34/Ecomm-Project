@@ -1,0 +1,19 @@
+AllCops:
+  Exclude:
+    - db/**
+    - config/**
+    - script/**
+    - bin/**
+    - test/**
+
+Encoding:
+  Enabled: false
+
+Documentation:
+  Enabled: false
+
+MethodLength:
+  Enabled: false
+
+LineLength:
+  Enabled: false

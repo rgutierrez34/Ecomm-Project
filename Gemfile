@@ -45,3 +45,7 @@ gem 'devise'
 gem 'kaminari'
 
 gem 'carrierwave'
+
+gem 'rubocop', require: false
+
+gem 'slim', '~> 3.0.0'
