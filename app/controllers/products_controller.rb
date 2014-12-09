@@ -1,6 +1,9 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
 
+  # rubocop:disable MethodLength
+  # rubocop:disable LineLength
+
   # GET /products
   # GET /products.json
   def index
@@ -26,6 +29,7 @@ class ProductsController < ApplicationController
 
   # POST /products
   # POST /products.json
+
   def create
     @product = Product.new(product_params)
     @categories = Category.all
@@ -65,14 +69,13 @@ class ProductsController < ApplicationController
     end
   end
 
-  private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_product
-      @product = Product.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_product
+    @product = Product.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def product_params
-      params.require(:product).permit(:name, :description, :quantity, :price, :image, :category_id, :sale)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def product_params
+    params.require(:product).permit(:name, :description, :quantity, :price, :image, :category_id, :sale)
+  end
 end
