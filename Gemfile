@@ -7,6 +7,9 @@ gem 'rails', '4.1.7'
 group :development, :test do
   gem 'sqlite3'
 end
+group :production do
+  gem 'pg'
+end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -52,3 +55,4 @@ gem 'rubocop', require: false
 
 gem 'slim', '~> 3.0.0'
 
+gem 'heroku'
