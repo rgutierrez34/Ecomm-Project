@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title the Sole Shoe Shop
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  body
+    = render 'layouts/header'
+    #content
+      = yield
+    footer
+      = link_to 'Contact', contact_path
+      = link_to 'About', about_path
