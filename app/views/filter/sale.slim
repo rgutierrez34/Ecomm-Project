@@ -1,0 +1,4 @@
+h1 Products on Sale
+= paginate @products
+- @products.each do |product|
+  = render product
