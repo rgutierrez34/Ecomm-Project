@@ -5,8 +5,10 @@
   
   <h2><%= link_to product.name, product %></h2>
 
-  <p> 
+  <p>
     <b>Price: </b><%= number_to_currency(product.price) %>
   </p>
+
+  <%= button_to 'Add to Cart', line_items_path(product_id: product) %>
 
 </div>
